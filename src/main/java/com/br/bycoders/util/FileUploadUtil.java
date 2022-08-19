@@ -41,7 +41,7 @@ public class FileUploadUtil {
         String owner = line.substring(48,62);
         String store = line.substring(62,80);
 
-        return new Movement(type, getDate(date), getValue(value), cpf, card, getHour(hour), store, owner);
+        return new Movement(type, getDate(date), getValue(value), cpf, card, getHour(hour), store.trim(), owner.trim());
     }
 
     public static BigDecimal getValue(String value) {

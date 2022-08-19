@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
 
+    @GetMapping
+    public String list() {
+        return "movements/movements";
+    }
+
     @GetMapping("form")
     public String form(){
         return "movements/form";

@@ -1,10 +1,11 @@
-insert into tb_type (cod, description, nature)
+ insert into tb_type (cod, description, nature)
  values ('1', 'Débito', 'Entrada'),
         ('2', 'Boleto', 'Saída'),
         ('3', 'Financiamento', 'Saída'),
         ('4', 'Crédito', 'Entrada'),
         ('5', 'Recebimento Empréstimo', 'Entrada'),
         ('6', 'Vendas', 'Entrada'),
-        ('7', 'Recebimento TED	', 'Entrada'),
+        ('7', 'Recebimento TED', 'Entrada'),
         ('8', 'Recebimento DOC', 'Entrada'),
-        ('9', 'Aluguel', 'Saída');
+        ('9', 'Aluguel', 'Saída')
+        ON DUPLICATE KEY UPDATE cod=cod , description=description , nature=nature;

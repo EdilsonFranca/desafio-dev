@@ -2,10 +2,13 @@ package com.br.bycoders.dtos;
 
 import com.br.bycoders.models.Movement;
 import com.br.bycoders.models.Type;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
-
+@Getter
+@NoArgsConstructor
 public class MovementDto {
     private long id;
     private Type type;
@@ -16,8 +19,6 @@ public class MovementDto {
     private String hour;
     private String store;
     private String owner;
-
-    public MovementDto() {}
 
     public MovementDto(Movement movement) {
         this.id   = movement.getId();

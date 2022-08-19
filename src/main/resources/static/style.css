@@ -17,23 +17,37 @@ body {
     color: lightslategray;
 }
 
-.box-list {
-    border: 2px solid #dee2e6;
-    border-radius: 5px;
-    padding: 10px;
-    height: calc(100vh - 120px);
-    overflow-y: scroll !important;
-    overflow-x: hidden;
+.search {
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border-radius: 20px 0 0 20px;
 }
 
-.btn-submit {
-    padding: 5px 10px;
-    border: 1px solid #0d6efd;
-    background: #0d6efd;
-    border-radius: 10px;
-    color: #fff;
+.btn-search {
+    border-radius: 0 20px 20px 0;
+    padding: 4px;
+}
+
+.balance-container{
+   display:flex;
+   padding:10px;
+
+}
+
+.balance-container > div{
     align-items: center;
     align-content: center;
+    display: flex;
+}
+
+
+#balance{
+   background:#0DCAF0;
+   border-radius: 10px;
+   margin-right:10px;
+   margin-left:10px;
+   padding: 5px 10px;
 }
 
 .btn-nav {
@@ -47,4 +61,49 @@ body {
     font-size: 17px;
     align-items: center;
     align-content: center;
+}
+
+.btn-submit {
+    padding: 5px 10px;
+    border: 1px solid #0d6efd;
+    background: #0d6efd;
+    border-radius: 10px;
+    color: #fff;
+    align-items: center;
+    align-content: center;
+}
+
+.box-list {
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    height: calc(100vh - 120px);
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+}
+
+.table {
+    width: 100%;
+}
+
+.table #tbody {
+    font-size: 15px;
+}
+
+.table #tbody > .tr {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 15px
+}
+
+.table > .tr {
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.table > .tr .td {
+    width: 12%;
 }
